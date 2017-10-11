@@ -1,0 +1,15 @@
+#mainpage{
+  background:url(../../assets/img/C:\Users\aditya\Desktop\astro.jpg) no-repeat;
+  text-align:center;
+  padding:150px;
+  background-size:cover;
+}
+
+div.jumbotron{
+  border-radius:30px;
+  padding:40px;
+  background-color:rgba(255,255,255,0.75);
+  max-width:800px;
+  margin:auto;
+}
+
