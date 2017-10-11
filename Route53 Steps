@@ -1,0 +1,32 @@
+-> Create and Configure Amazon Route 53
+
+Go to the Amazon Route 53 console at https://console.aws.amazon.com/route53 and then create a hosted zone for your domain.
+
+-> Add Alias Records for www.example.com
+
+The alias records that you add to the hosted zone for your domain www.example.com to the corresponding S3 buckets. 
+Instead of using IP addresses, the alias records use the Amazon S3 website endpoints. 
+Amazon Route 53 maintains a mapping between the alias records and the IP addresses where the S3 buckets reside.
+-click on Hosted Zones 
+-Right column shows the alias, Click and add the target
+-save
+
+-> Create A Type DNS Records
+
+If you're not transferring your website from another existing website, you need to create new A type DNS records.
+
+-> To create A type DNS records in the Amazon Route 53 console
+
+Open the Amazon Route 53 console in your web browser.
+
+On the Dashboard, choose Hosted zones.
+
+Choose your domain name in the table of hosted zones.
+
+Choose Create Record Set.
+
+In the Create Record Set form that appears on the right, choose Yes for Alias.
+
+In Alias Target, provide the Amazon S3 website endpoint—for example, example.com.s3-website-us-west-2.amazonaws.com.
+
+Choose Save Record Set.
